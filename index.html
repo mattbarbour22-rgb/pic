@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pick 3 Competition</title>
+<meta name="description" content="Live Pick 3 golf pool leaderboards across the Masters, PGA Championship, U.S. Open, and The Open." />
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at 20% 10%, #14202e 0%, #060a10 60%, #030507 100%);
+    color: #f4f6f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 56px 24px 80px;
+  }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    text-align: center;
+    letter-spacing: .3em;
+    font-size: 12px;
+    font-weight: 800;
+    color: #9fb0c3;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    margin: 10px 0 6px;
+    letter-spacing: -.01em;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #b7c2ce;
+    max-width: 560px;
+    margin: 0 auto 48px;
+    line-height: 1.5;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 720px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 32px; }
+  }
+
+  .card {
+    position: relative;
+    display: block;
+    height: 240px;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 18px 40px rgba(0,0,0,.45);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 50px rgba(0,0,0,.55);
+  }
+
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(3,6,10,.15) 0%, rgba(3,6,10,.55) 55%, rgba(3,6,10,.92) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 22px;
+  }
+
+  .card-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #d9c7a1;
+    margin-bottom: 6px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .card-meta {
+    font-size: 13px;
+    color: #dfe6ec;
+    opacity: .9;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 52px;
+    font-size: 12px;
+    color: #6b7789;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">Pick 3 Competition</div>
+    <h1>Major Championships</h1>
+    <p class="subtitle">Choose a major to view its live Pick 3 pool leaderboard.</p>
+
+    <div class="grid">
+      <a href="https://the-masters-live.vercel.app/" class="card" style="background-image: url('augusta1.jpg');">
+        <div class="card-overlay">
+          <div class="card-label">91st Masters Tournament</div>
+          <div class="card-title">Masters Pick 3 Live</div>
+          <div class="card-meta">Augusta National Golf Club · April 8–11</div>
+        </div>
+      </a>
+
+      <a href="https://pga-championship-live.vercel.app/" class="card" style="background-image: url('https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=1200&q=80');">
+        <div class="card-overlay">
+          <div class="card-label">PGA Championship</div>
+          <div class="card-title">PGA Championship Pick 3 Live</div>
+          <div class="card-meta">Aronimink Golf Club · May 14–17</div>
+        </div>
+      </a>
+
+      <a href="https://us-open-live.vercel.app/" class="card" style="background-image: url('https://images.unsplash.com/photo-1500932334442-8761ee4810a7?auto=format&fit=crop&w=1200&q=80');">
+        <div class="card-overlay">
+          <div class="card-label">126th U.S. Open</div>
+          <div class="card-title">U.S. Open Pick 3 Live</div>
+          <div class="card-meta">Shinnecock Hills Golf Club · June 18–21</div>
+        </div>
+      </a>
+
+      <a href="https://the-open-live.vercel.app/" class="card" style="background-image: url('https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=1200&q=80');">
+        <div class="card-overlay">
+          <div class="card-label">154th Open Championship</div>
+          <div class="card-title">The Open Pick 3 Live</div>
+          <div class="card-meta">Royal Birkdale Golf Club · July 16–19</div>
+        </div>
+      </a>
+    </div>
+
+    <footer>Pick 3 Live Hub</footer>
+  </div>
+</body>
+</html>
